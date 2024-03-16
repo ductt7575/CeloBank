@@ -26,6 +26,7 @@ a {
     background: var.$black;
 
     &:hover {
+        cursor: pointer;
         opacity: 0.9;
     }
 }
@@ -100,4 +101,8 @@ a {
         border-radius: 50%;
         background-color: var.$primary-color;
     }
+}
+
+.logo {
+    padding: 12px 0px;
 }

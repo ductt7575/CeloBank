@@ -1,0 +1,109 @@
+@use '../base/variable' as var;
+
+.footer {
+    padding-top: 100px;
+    background: #fafbff;
+
+    &__top {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 3fr;
+    }
+
+    &-column {
+        &__title {
+            color: var.$black;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.67;
+        }
+
+        &__list {
+            margin-top: 10px;
+        }
+
+        &__link {
+            margin-top: 14px;
+            display: inline-block;
+            color: var.$light-gray;
+            font-size: 1.8rem;
+            line-height: 1.67;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .subscribe {
+        &__form {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: 20px;
+            width: 100%;
+            height: 52px;
+            border-radius: 8px;
+            margin-top: 24px;
+        }
+
+        &__input {
+            color: var.$gray;
+            padding: 12px;
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+            border: 1px solid #8e919a;
+
+            &::selection {
+                background: var.$primary-color;
+                color: white;
+            }
+
+            &::placeholder {
+                color: #8e919a;
+                line-height: 1.75;
+            }
+        }
+
+        &__btn {
+            --height: 52px;
+            background: var.$primary-color;
+            min-width: 113px;
+            font-weight: 500;
+            border-radius: 6px;
+        }
+
+        &__label {
+            display: block;
+            margin-top: 48px;
+            color: var.$black;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.67;
+        }
+    }
+
+    &__bottom {
+        margin-top: 58px;
+        display: flex;
+        column-gap: 100px;
+    }
+
+    &__contact {
+        color: #6a6e78;
+        font-size: 1.8rem;
+        line-height: 1.67; /* 166.667% */
+        text-decoration-line: underline;
+    }
+
+    &-copyright {
+        background: var.$primary-color;
+        padding: 28px 0;
+        margin-top: 28px;
+        &__text {
+            text-align: center;
+            color: #fff;
+            line-height: 1.75;
+        }
+    }
+}
