@@ -266,10 +266,6 @@ a {
   background-color: #7264d6;
 }
 
-.logo {
-  padding: 12px 0px;
-}
-
 .header {
   margin-top: 22px;
   padding: 8px 0px;
@@ -284,6 +280,9 @@ a {
   display: flex;
   align-items: center;
   column-gap: 50px;
+}
+.header .logo {
+  padding: 12px 0px;
 }
 .header .navbar__list {
   display: flex;
